@@ -1,7 +1,6 @@
 package com.hasnat.voicerippleexample;
 
 
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
