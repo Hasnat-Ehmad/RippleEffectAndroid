@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/voice_panel"
+        android:elevation="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#E9E9E9"
+        android:layout_alignParentTop="true" >
+
+
+        <com.hasnat.voicerippleexample.RippleView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:rv_color="@color/colorPrimary"
+            app:rv_radius="50dp"
+            app:rv_scale="2"
+            android:id="@+id/ripple2"
+            app:rv_type="fill"
+            app:rv_duration="1000">
+
+            <Button
+                android:id="@+id/mic_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/record"/>
+        </com.hasnat.voicerippleexample.RippleView>
+
+        <Button
+            android:id="@+id/voice_play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
